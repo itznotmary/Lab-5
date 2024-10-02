@@ -1,0 +1,177 @@
+def kilometers_to_miles(kilometers):
+    return kilometers * 0.6214
+def main():
+    kilometers = float(input("Enter distance in kilometers: "))
+    miles = kilometers_to_miles(kilometers)
+    print(f"{kilometers} kilometers is equal to {miles} miles.")
+if __name__ == "__main__":
+    main()
+
+
+def calculate_state_tax(purchase_amount):
+    state_tax_rate = 0.05
+    return purchase_amount * state_tax_rate
+def calculate_county_tax(purchase_amount):
+    county_tax_rate = 0.025
+    return purchase_amount * county_tax_rate
+def calculate_total_tax(state_tax, county_tax):
+    return state_tax + county_tax
+def calculate_total_sale(purchase_amount, total_tax):
+    return purchase_amount + total_tax
+def main():
+    purchase_amount = float(input("Enter the amount of the purchase: $"))
+    state_tax = calculate_state_tax(purchase_amount)
+    county_tax = calculate_county_tax(purchase_amount)
+    total_tax = calculate_total_tax(state_tax, county_tax)
+    total_sale = calculate_total_sale(purchase_amount, total_tax)
+    print(f"Amount of purchase: ${purchase_amount:.2f}")
+    print(f"State sales tax: ${state_tax:.2f}")
+    print(f"County sales tax: ${county_tax:.2f}")
+    print(f"Total sales tax: ${total_tax:.2f}")
+    print(f"Total of the sale: ${total_sale:.2f}")
+if __name__ == "__main__":
+    main()
+
+
+def calculate_minimum_insurance(replacement_cost):
+    insurance_rate = 0.80
+    return replacement_cost * insurance_rate
+def main():
+    replacement_cost = float(input("Enter the replacement cost of the building: $"))
+    minimum_insurance = calculate_minimum_insurance(replacement_cost)
+    print(f"The minimum amount of insurance you should buy for the property is: ${minimum_insurance:.2f}")
+if __name__ == "__main__":
+    main()
+
+
+def calculate_total_monthly_cost(loan_payment, insurance, gas, oil, tires, maintenance):
+    return loan_payment + insurance + gas + oil + tires + maintenance
+def calculate_total_annual_cost(monthly_cost):
+    return monthly_cost * 12
+def main():
+    loan_payment = float(input("Enter the monthly loan payment: $"))
+    insurance = float(input("Enter the monthly insurance cost: $"))
+    gas = float(input("Enter the monthly gas cost: $"))
+    oil = float(input("Enter the monthly oil cost: $"))
+    tires = float(input("Enter the monthly tires cost: $"))
+    maintenance = float(input("Enter the monthly maintenance cost: $")) 
+    total_monthly_cost = calculate_total_monthly_cost(loan_payment, insurance, gas, oil, tires, maintenance)
+    total_annual_cost = calculate_total_annual_cost(total_monthly_cost)
+    print(f"Total monthly cost: ${total_monthly_cost:.2f}")
+    print(f"Total annual cost: ${total_annual_cost:.2f}")
+if __name__ == "__main__":
+    main()
+
+
+def calculate_assessment_value(actual_value):
+    return actual_value * 0.60
+def calculate_property_tax(assessment_value):
+    tax_rate = 0.72 / 100
+    return assessment_value * tax_rate
+def main():
+    actual_value = float(input("Enter the actual value of the property: $"))
+    assessment_value = calculate_assessment_value(actual_value)
+    property_tax = calculate_property_tax(assessment_value)
+    print(f"Assessment value: ${assessment_value:.2f}")
+    print(f"Property tax: ${property_tax:.2f}")
+if __name__ == "__main__":
+    main()
+
+
+def calculate_income(class_a_tickets, class_b_tickets, class_c_tickets):
+    class_a_price = 20
+    class_b_price = 15
+    class_c_price = 10
+    income_a = class_a_tickets * class_a_price
+    income_b = class_b_tickets * class_b_price
+    income_c = class_c_tickets * class_c_price
+    total_income = income_a + income_b + income_c
+    return total_income
+def main():
+    class_a_tickets = int(input("Enter the number of Class A tickets sold: "))
+    class_b_tickets = int(input("Enter the number of Class B tickets sold: "))
+    class_c_tickets = int(input("Enter the number of Class C tickets sold: "))
+    total_income = calculate_income(class_a_tickets, class_b_tickets, class_c_tickets)
+    print(f"Total income generated from ticket sales: ${total_income:.2f}")
+if __name__ == "__main__":
+    main()
+
+
+def calculate_paint_requirements(square_feet):
+    gallons_required = square_feet / 112
+    hours_required = (square_feet / 112) * 8
+    return gallons_required, hours_required
+def calculate_costs(gallons_required, hours_required, paint_price_per_gallon, labor_rate_per_hour):
+    paint_cost = gallons_required * paint_price_per_gallon
+    labor_cost = hours_required * labor_rate_per_hour
+    total_cost = paint_cost + labor_cost
+    return paint_cost, labor_cost, total_cost
+def main():
+    square_feet = float(input("Enter the square feet of wall space to be painted: "))
+    paint_price_per_gallon = float(input("Enter the price of the paint per gallon: $"))
+    labor_rate_per_hour = 35.00
+    gallons_required, hours_required = calculate_paint_requirements(square_feet)
+    paint_cost, labor_cost, total_cost = calculate_costs(gallons_required, hours_required, paint_price_per_gallon, labor_rate_per_hour)
+    print(f"Number of gallons of paint required: {gallons_required:.2f}")
+    print(f"Hours of labor required: {hours_required:.2f}")
+    print(f"Cost of the paint: ${paint_cost:.2f}")
+    print(f"Labor charges: ${labor_cost:.2f}")
+    print(f"Total cost of the paint job: ${total_cost:.2f}")
+if __name__ == "__main__":\
+    main()
+
+
+def calculate_state_tax(total_sales):
+    state_tax_rate = 0.05
+    return total_sales * state_tax_rate
+def calculate_county_tax(total_sales):
+    county_tax_rate = 0.025
+    return total_sales * county_tax_rate
+def calculate_total_tax(state_tax, county_tax):
+    return state_tax + county_tax
+def main():
+    total_sales = float(input("Enter the total sales for the month: $"))
+    state_tax = calculate_state_tax(total_sales)
+    county_tax = calculate_county_tax(total_sales)
+    total_tax = calculate_total_tax(state_tax, county_tax)
+    print(f"County sales tax: ${county_tax:.2f}")
+    print(f"State sales tax: ${state_tax:.2f}")
+    print(f"Total sales tax: ${total_tax:.2f}")
+if __name__ == "__main__":
+    main()
+
+
+def feet_to_inches(feet):
+    return feet * 12
+def main():
+    feet = float(input("Enter the number of feet: "))
+    inches = feet_to_inches(feet)
+    print(f"{feet} feet is equal to {inches} inches.")
+if __name__ == "__main__":
+    main()
+
+
+
+def generate_quiz():
+    num1 = random.randint(1, 500)
+    num2 = random.randint(1, 500)
+    return num1, num2
+def main():
+    num1, num2 = generate_quiz()
+    print(f"  {num1}\n+ {num2}")
+    answer = int(input("Enter your answer: "))
+    correct_answer = num1 + num2
+    if answer == correct_answer:
+        print("Congratulations! Your answer is correct.")
+    else:
+        print(f"Sorry, the correct answer is {correct_answer}.")
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+
